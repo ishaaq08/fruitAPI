@@ -32,6 +32,8 @@ const fruits = require("./fruits.json")
 // Express.JSON 
     // Every single request will hit that middle ware
 
+const cors = require("cors")
+app.use(cors())
 app.use(express.json())
 
 // Simple GET requests
