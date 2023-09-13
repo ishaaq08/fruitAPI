@@ -111,9 +111,9 @@ app.post("/fruits", (req, res) => {
         const newFruit = req.body
         fruits.push(newFruit)
 
-        //res.status(201).send(fruit)
-        console.log(fruit)
-        res.send(`${req.body} was created as a new Fruit `)
+        res.status(201).send(fruit)
+        
+        
     }
 })
 
